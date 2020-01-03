@@ -46,7 +46,7 @@ A collection of objects that are inserted (push) and removed (pop) according to 
 
 # Implemetations
 ## Base Implementation - Adapt Python `list` to Implement Stack
-### `array-stack.py`
+### `array_stack.py`
 
 We can implement a stack quite easily by storing its elements in a Python `list`.
 - The list class already supports adding an element to the end with the `append` method, and removing the last element with the `pop` method.
@@ -82,7 +82,7 @@ We can implement a stack quite easily by storing its elements in a Python `list`
 Space usage is still O(n).
 
 ## Avoiding Amortization by Reserving Capacity
-### `array-stack-preallocated.py`
+### `array_stack_preallocated.py`
 
 #### Motivation
 - Some contexts may provide additional knowledge that suggests a maximum size that a stack will reach.
@@ -96,7 +96,13 @@ Space usage is still O(n).
 # Example Use Cases
 
 ## Reverse Data Using a Stack
-### `reverse-file.py`
+### `reverse_file.py`
 
 We wish to print lines of a file in reverse order in to display a data set in decreasing order rather than increasing order.
 
+## Test a string over `"{,},(,),[,]"` for well-formedness.
+### `well_formed_string.py`
+
+A string over the characters `"{,},(,),[,]"` is said to be well-formed if the different types of brackets match in the correct order.
+
+This program tests if a string made up of the characters are well formed.
