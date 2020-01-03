@@ -7,7 +7,7 @@ class Full(Exception):
     pass
 
 
-class ArrayStack:
+class ArrayStackPreallocated:
     """LIFO Stack implementation using a Python list as underlying storage."""
 
     def __init__(self, max_len=20):

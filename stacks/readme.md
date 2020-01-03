@@ -41,7 +41,7 @@ A collection of objects that are inserted (push) and removed (pop) according to 
 ## Top Tips
 
 - Learn to recognize when the stack's **LIFO** property is  _applicable_.
-  - e.g. when parsing, or addresses of recently visited sites, or "undo" mechanism
+  - e.g. when parsing, or addresses of recently visited sites, or "undo" mechanism, or function call stacks
 - Consider **augmenting** the basic stack or queue data structure to support additional operations, such as finding the maximum element.
 
 # Implemetations
