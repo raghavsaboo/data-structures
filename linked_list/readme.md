@@ -13,7 +13,9 @@ Both array-based sequences and linked lists keep elements in a certain order, bu
 A `linked list`, in contrast, relies on a more distributed representation in which a lightweight object, known as a **node**, is allocated for each element. Each node maintains a reference to its element and one or more references to neighboring nodes in order to collectively represent the linear order of the sequence. 
 
 ## Definition
+Singly Linked List
 
+Doubly Linked List
 
 ## Complexity
 
@@ -48,7 +50,7 @@ A `linked list`, in contrast, relies on a more distributed representation in whi
     </tr>
 </table>
 
-**Spacy Complexity (Worst)** - O(n)
+**Space Complexity (Worst)** - O(n)
 
 ## Top Tips
 

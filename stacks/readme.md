@@ -36,7 +36,7 @@ A collection of objects that are inserted (push) and removed (pop) according to 
     </tr>
 </table>
 
-**Spacy Complexity (Worst)** - O(n)
+**Space Complexity (Worst)** - O(n)
 
 ## Top Tips
 
@@ -44,7 +44,7 @@ A collection of objects that are inserted (push) and removed (pop) according to 
   - e.g. when parsing, or addresses of recently visited sites, or "undo" mechanism, or function call stacks
 - Consider **augmenting** the basic stack or queue data structure to support additional operations, such as finding the maximum element.
 
-# Implemetations
+# Implementations
 ## Base Implementation - Adapt Python `list` to Implement Stack
 ### `array_stack.py`
 
@@ -77,7 +77,7 @@ We can implement a stack quite easily by storing its elements in a Python `list`
     </tr>
 </table>
 
-*Due to **amortized** bounds of Python `list`, a typical call to either of these methods uses constant time, but there is occosionally an O(n) time worst case when an operation causes the list to resize it's internal array.*
+*Due to **amortized** bounds of Python `list`, a typical call to either of these methods uses constant time, but there is occasionally an O(n) time worst case when an operation causes the list to resize it's internal array.*
 
 Space usage is still O(n).
 
@@ -88,10 +88,9 @@ Space usage is still O(n).
 - Some contexts may provide additional knowledge that suggests a maximum size that a stack will reach.
 - It is also more efficient in practice to construct a list with initial length `n` than it is to start with an empty list and append `n` items (even though both approaches run in O(n) time).
 
-
 #### Modifications
 - Constructor accepts a parameter specifying the maximum capacity of a stack and initializes it to that length.
-- Size of the stack would no longer be synonymous with the length of the list - a sepearte integer would be used to denote the current number of elements in the stack.
+- Size of the stack would no longer be synonymous with the length of the list - a separate integer would be used to denote the current number of elements in the stack.
 
 # Example Use Cases
 
