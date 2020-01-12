@@ -92,6 +92,22 @@ Space usage is still O(n).
 - Constructor accepts a parameter specifying the maximum capacity of a stack and initializes it to that length.
 - Size of the stack would no longer be synonymous with the length of the list - a separate integer would be used to denote the current number of elements in the stack.
 
+## Getting Max Element from a Stack
+### `array_stack_with_cached_max.py`
+
+#### Motivation
+- Build in a store of maximum in the stack at any given moment without requiring to iterate through the whole stack every time it is updated
+
+#### Modifications
+- The time complexity for iterating through the underlying array for an array-based stack is O(n) and the space complexity is O(1)
+- The time complexity can be reduced to O(log n) using auxiliary data structures e.g. heap or BST and a hash table. The space complexity increases to O(n) and the code complexity is high
+- So instead we could use a single auxiliary variable M to record the element that is maximum in the stack
+  - Updating M is easy on pushes: M = max(M, e)
+  - However updating M on pop is very time consuming (have to iterate through the stack to find the new max again)
+- INSTEAD we can **cache** for each element, the max at the **time of push**
+  - Specifically for each entry in the stack, we cache the maximum stored at or below that entry
+  - Now when we pop, we evict the corresponding cached value
+
 # Example Use Cases
 
 ## Reverse Data Using a Stack
