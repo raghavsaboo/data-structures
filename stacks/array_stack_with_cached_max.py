@@ -32,7 +32,7 @@ class ArrayStack:
         """Add element e to the top of the stack."""
 
         # new item stored at the end of list
-        self._data.append(self.ElementWithCachedMax(e, e if self.empty() else max(x, self.get_max()))
+        self._data.append(self.ElementWithCachedMax(e, e if self.empty() else max(x, self.get_max())))
 
     def top(self):
         """Return (but do not remove) the element at the top of the stack.
