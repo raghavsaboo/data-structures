@@ -1,4 +1,4 @@
-def is_well_formed(s):
+def is_well_formed_string(s):
     left_chars, lookup = [], {'(': ')', '{': '}', '[': ']'}
     for c in s:
         if c in lookup:
