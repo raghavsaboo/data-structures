@@ -1,6 +1,4 @@
-# Stacks
-
-like 🥞 and 🍯
+# Stacks 🥞
 
 ## Definition
 A collection of objects that are inserted (push) and removed (pop) according to the **LAST IN, FIRST OUT (LIFO)** semantics.
