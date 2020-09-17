@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "/home/raghavsaboo/anaconda3/bin/python",
+    "python.dataScience.notebookFileRoot": "${workspaceFolder}"
+}
