@@ -1,10 +1,16 @@
-class Queue:
+class CustomQueue:
 
     def __init__(self):
+        # Here we have implemented queue using python list.
+        # However, if the queue is implemented using a Linked list,
+        # the time complexity can be optimized to O(1).
         self.queue_list = []
+        
+    def size(self):
+        return len(self.queue_list)
 
     def is_empty(self):
-        return len(self.queue_list) == 0
+        return self.size() == 0
 
     def front(self):
         if self.is_empty():
