@@ -2,7 +2,7 @@ from linked_lists.singly_linked_list import Node, SinglyLinkedList
 from queues.custom_queue import CustomQueue
 from stacks.stack import Stack
 
-class Graph:
+class AdjacencyListDAG:
 
     def __init__(self, number_of_nodes):
         # total number of nodes in graph
@@ -29,7 +29,7 @@ class Graph:
     def print_graph(self):
         print(">>Adjacency List of Directed Graph<<")
         print("\n")
-        for i in range(self.nodes):
+        for i in range(self.number_of_nodes):
             print("|", i, end=" | => ")
             temp = self.array[i].get_head()
             while(temp is not None):
@@ -133,7 +133,7 @@ class Graph:
         result, visited = self._dfs_traversal_helper(source, visited)
         # visit remaining nodes
         for node in range(num_nodes):
-            if visited[i] is False:
+            if visited[node] is False:
                 result_new, visited = self._dfs_traversal_helper(node, visited)
                 result += result_new
         return result
